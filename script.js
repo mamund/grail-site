@@ -1,6 +1,6 @@
 const copyButton = document.getElementById('copy-command');
 copyButton?.addEventListener('click', async () => {
-  const command = 'npm install -g @mamund/grail';
+  const command = 'npm install -g @mamund/grail@beta';
   try {
     await navigator.clipboard.writeText(command);
     copyButton.textContent = 'Copied';
